@@ -1,0 +1,106 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 梅旭红
+subtitle: 网络、云计算、大数据の札记
+description: 网络、云计算、大数据の札记
+keywords: ICT,网络,云计算,大数据,Docker,K8s,数据库,Mysql,GaussDB,Python,运维
+author: 梅旭红
+#language: zh-cn
+language: 
+  - zh-CN
+timezone: "Asia/Shanghai"
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://meixuhong.com
+root: /
+permalink: /:title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: 
+  - 'README.md'
+  - 'robots.txt'
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 5
+  order_by: -date
+  
+# Category & Tag
+default_category: article
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 50
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: butterfly
+theme: butterfly
+
+# 配置网站图标favicon与作者图标avatar，适用于hexo-theme-material-x
+favicon: https://cdn.jsdelivr.net/gh/meixuhong/cdn/img/favicon.ico
+avatar: https://cdn.jsdelivr.net/gh/meixuhong/cdn/img/mei.jpg
+
+# 配置百度主动提交，需要安装插件：npm i hexo-baidu-url-submit -S
+# baidu_url_submit:
+#   count: 10 # 提交最新的链接数
+#   host: lmbiji.com # 在百度站长平台中注册的域名,虽然官方推荐要带有 www, 但可以不带.
+#   token:  a7T7UoE9EEqqeqzU # 你的秘钥,每个人都不一样,获取方法在下面
+#   path: baidu_urls.txt # 文本文档的地址,新链接会保存在此文本文档里
+# # 针对百度主动提交动作的deploy
+# deploy:
+#  type: baidu_url_submitter
+
+# 用了上述插件后报错，故注释掉
+
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  # repo: git@github.com:meixuhong/meixuhong.github.io.git
+  repo: https://github.com/meixuhong/meixuhong.github.io.git
+  branch: master

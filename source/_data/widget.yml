@@ -1,0 +1,6 @@
+- class_name: wechat-gp
+  id_name: wechat-gp
+  name: 微信公众号
+  icon: iconfont icon-weixin
+  order: -1
+  html: '<img class="aside-img" src="https://cdn.jsdelivr.net/gh/meixuhong/cdn@master/img-hosting/wechat_gp_search-min.png"/>'

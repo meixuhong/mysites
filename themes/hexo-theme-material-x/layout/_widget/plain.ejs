@@ -1,0 +1,18 @@
+<section class='widget <%- item.widget?item.widget:'plain' %>'>
+  <%- partial('header', {item: item, defIcon: '', defTitle: ''}) %>
+  <div class='content <%= theme.style %>'>
+    <%- markdown(item.body) %>
+
+    
+    
+      <div class='avatar'>
+        <img class='avatar' src='<%- url_for(item.avatar) %>'/>
+      </div>
+     
+    
+
+
+  </div>
+</section>
+
+
